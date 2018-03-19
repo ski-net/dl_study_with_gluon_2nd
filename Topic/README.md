@@ -3,7 +3,7 @@
 ### seujung
 
 - TTS(Text-To-Speech)
-   - deep voice 3 (https://arxiv.org/pdf/1710.07654.pdf)
+   - [deep voice 3] (https://arxiv.org/pdf/1710.07654.pdf)
 - GAN
    - CycleGAN (https://arxiv.org/pdf/1703.10593.pdf)
 - QA
