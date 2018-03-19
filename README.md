@@ -7,3 +7,8 @@ Deep learning to learn while making
 | Topic      | Date/Time | Location |   Presentor | 
 |-----------|----------|--------|----------|
 |  |  3/21,12:00   | TBD  |    |  
+|  |  0/0, 00:00 | TBD  |    |  
+|  |  0/0, 00:00 | TBD  |    |  
+|  |  0/0, 00:00 | TBD  |    |  
+|  |  0/0, 00:00 | TBD  |    |  
+|  |  0/0, 00:00 | TBD  |    |  
