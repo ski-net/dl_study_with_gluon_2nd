@@ -14,7 +14,7 @@ Deep learning to learn while making
 |  |  0/0, 00:00 | TBD  |    |  
 
 
-## Topic
+## Subject
 
  - NLP(Natural Language Processing)
    - haven-jeon
@@ -31,3 +31,9 @@ Deep learning to learn while making
    - seujung
  - QA(Question & Answer)
    - soeque1
+
+
+## Topic
+
+- QA
+  - relational network(@seujung)
