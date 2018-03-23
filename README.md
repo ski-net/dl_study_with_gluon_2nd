@@ -15,3 +15,14 @@ Deep learning to learn while making
 
 
 ## Topic
+
+ - NLP(Natural Language Processing)
+   - haven-jeon
+ - HPO(Hyper Pamater Optimizer)
+   - 
+ - Reinforcement Learning for finance
+   - macnt2a
+ - GAN(Generative Adversarial Nets)
+   - chococig25, jinyipark582
+ - TTS(Text To Speech)
+   - seujung
