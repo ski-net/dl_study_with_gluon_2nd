@@ -7,7 +7,7 @@ Deep learning to learn while making
 | Topic      | Date/Time | Location |   Presentor | 
 |-----------|----------|--------|----------|
 | Discuss the topic |  3/21,14:00   |   |    |  
-| relational network |  3/27, 12:00 | 분석실 | seujung, haven-jeon   |  
+| relational network, introduction to convolution for NLP |  3/27, 12:00 | 분석실 | seujung, haven-jeon   |  
 |  |  0/0, 00:00 | TBD  |    |  
 |  |  0/0, 00:00 | TBD  |    |  
 |  |  0/0, 00:00 | TBD  |    |  
@@ -17,7 +17,7 @@ Deep learning to learn while making
 ## Subject
 
  - NLP(Natural Language Processing)
-   - haven-jeon
+   - haven-jeon, sequence labeling 
  - HPO(Hyper Pamater Optimizer)
    - kionkim
    - ljy3795
