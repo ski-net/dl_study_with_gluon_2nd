@@ -7,7 +7,7 @@ Deep learning to learn while making
 | Topic      | Date/Time | Location |   Presentor | 
 |-----------|----------|--------|----------|
 | Discuss the topic |  3/21,14:00   |   |    |  
-| relational network, <br/>introduction to convolution for NLP |  3/27, 12:00 | 분석실 | seujung, haven-jeon   |  
+| [relational network](relational_network/relation_reasoning_code_single_gpu.ipynb), <br/>introduction to convolution for NLP |  3/27, 12:00 | 분석실 | seujung, haven-jeon   |  
 |  |  0/0, 00:00 | TBD  |    |  
 |  |  0/0, 00:00 | TBD  |    |  
 |  |  0/0, 00:00 | TBD  |    |  
