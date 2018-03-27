@@ -23,7 +23,7 @@ Deep learning to learn while making
    - ljy3795
  - Reinforcement Learning for finance
    - macnt2a
- - VQA (Visual Question Answering)
+ - VQA(Visual Question Answering)
    - soohwanjo
  - GAN(Generative Adversarial Nets)
    - chococig25, jinyipark582
