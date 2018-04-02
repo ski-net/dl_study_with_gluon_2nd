@@ -8,7 +8,7 @@ Deep learning to learn while making
 |-----------|----------|--------|----------|
 | Discuss the topic |  3/21,14:00   |   |    |  
 | [relational network](relational_network/relation_reasoning_code_single_gpu.ipynb), <br/>introduction to convolution for NLP |  3/27, 12:00 | 분석실 | seujung, haven-jeon   |  
-|  |  0/0, 00:00 | TBD  |    |  
+| [capsule network](capsule_network/dynamic-routing.md) |  4/5, 11:40 | 지하2층 E 회의실  | kionkim   |  
 |  |  0/0, 00:00 | TBD  |    |  
 |  |  0/0, 00:00 | TBD  |    |  
 |  |  0/0, 00:00 | TBD  |    |  
@@ -21,6 +21,8 @@ Deep learning to learn while making
  - HPO(Hyper Pamater Optimizer)
    - kionkim
    - ljy3795
+ - Capsule Network
+   - kionkim
  - Reinforcement Learning for finance
    - macnt2a
  - VQA(Visual Question Answering)
