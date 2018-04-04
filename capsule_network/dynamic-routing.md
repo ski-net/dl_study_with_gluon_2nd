@@ -78,7 +78,11 @@
 
 * 다음과 같이 posterior를 찾아가는 과정으로 해석하기도 함
 
-![updating_coupling_coefficient](/assets/updating_coupling_coefficient.png)
+![updating_coupling_coefficient](./assets/updating_coupling_coefficient.png)
+
+* 알고리즘 개요
+![routing_algorithm](./assets/routing_algorithm.png)
+
 
 #### Squashing
 
@@ -99,7 +103,7 @@ $$v_j = \frac{||s_j||^2}{1 + ||s_j||^2}\cdot \frac {s_j}{||s_j||}$$
 
 * 다음의 digitcap은 숫자를 4로 분류하는 capsule임
 
-![digitcap_example](/assets/digitcap_example.png)
+![digitcap_example](./assets/digitcap_example.png)
 ### Loss Function
 
 #### Marginal Loss
@@ -112,4 +116,12 @@ $$ T_k = \max(0, m^+ - ||v_k||)^2 + \lambda (1 - T_k)\ max(0, ||v_k|| -m^-)^2$$
 * 실제 이미지와 예측되 이미지가 얼마나 비슷한지를 measure
 ![capsnet-recunstruction](./assets/capsnet-recunstruction.png)
 * Digitcap에서 가장 좋은 것만 골라서, fully connected network를 태워서 원래의 이미지와의 차이를 measure
-![reconstruction_loss](/assets/reconstruction_loss.png)
+![reconstruction_loss](./assets/reconstruction_loss.png)
+
+### Step by step analysis
+
+
+### Capsule 의미
+
+* Capsule의 각 dimension은 다음의 링크에서처럼 해석 가능
+  - http://210.121.159.217:15000/
