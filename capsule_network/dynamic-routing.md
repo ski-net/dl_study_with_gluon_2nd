@@ -24,7 +24,7 @@
  * 위의 filter를 적용해서 나온 convolution layer의 feature map은 위의 패턴이 존재하는 영역에서는 큰 값을, 위의 패턴이 존재하지 않는 영역에서는 작은 값을 가짐
 
  * $9\times 9$의 filter를 적용했으므로, feature map의 크기는 $28 - 9 + 1 =20$ 차원임.
- * 여기에 RELU를 적용하면 다음과 같은 filter를 얻을 수 있음
+ * 여기에 RELU를 적용하면 다음과 같은 feature map을 얻을 수 있음
 ![conv_kernel_relu](./assets/conv_kernel_relu.png)
 
  * 이렇게 256개의 filter를 같은 이미지에 적용하고 나면 $20\times 20$차원의 256개 feature map이 생기고, 여기에서 한번더 $9\times 9 \times 256$ kernel을 적용시킴.
