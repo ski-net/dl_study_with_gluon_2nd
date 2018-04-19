@@ -10,8 +10,8 @@ Deep learning to learn while making
 | [relational network](relational_network/relation_reasoning_code_single_gpu.ipynb), <br/>introduction to convolution for NLP |  3/27, 12:00 | 분석실 | seujung, haven-jeon   |  
 | [capsule network](capsule_network/dynamic-routing.md), <br>[intro to rl_trader](rl_trader/180405/180405_Formulation.ipynb) |  4/5, 11:40 | 지하2층 E 회의실  | kionkim, macnt2a   |  
 |  |  4/12, 12:00 | B2 H회의실  |    |  
-|  |  0/0, 00:00 | TBD  |    |  
-|  |  0/0, 00:00 | TBD  |    |  
+|  |  4/19, 12:00 | B2 H회의실  |    |  
+|  |  4/26, 12:00 | B2 H회의실 |    |  
 
 
 ## Subject
