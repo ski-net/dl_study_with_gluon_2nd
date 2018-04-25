@@ -41,10 +41,10 @@ Deep learning to learn while making
 ## Topic
 
 - QA
-  - relational network(@seujung)
+  - [relational network](relational_network/relation_reasoning_code_single_gpu.ipynb)(@seujung)
 
 - GAN
-  - cyclegan
+  - origin GAN
 
 - etc
-  - capsnet
+  - [capsule network](capsule_network/dynamic-routing.md)
