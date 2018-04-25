@@ -44,7 +44,9 @@ Deep learning to learn while making
   - [relational network](relational_network/relation_reasoning_code_single_gpu.ipynb)(@seujung)
 
 - GAN
-  - origin GAN
+  - [origin GAN](generative_adversarial_network/1_gan_original.ipynb)(@chococig25)
+  - cycleGAN
+  - starGAN
 
 - etc
-  - [capsule network](capsule_network/dynamic-routing.md)
+  - [capsule network](capsule_network/dynamic-routing.md)(@kionkim)
