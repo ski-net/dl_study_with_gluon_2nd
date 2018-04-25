@@ -14,7 +14,7 @@ Deep learning to learn while making
 | [End-To-End Memory Networks]() |  4/26, 12:00 | B2 H회의실 | soeque   |  
 |  |  5/3, 12:00 | B2 H회의실 |    |  
 |  |  5/10, 12:00 | B2 H회의실 |    | 
-|  |  5/17, 12:00 | B2 H회의실 |    | 
+| WaveNet |  5/17, 12:00 | B2 H회의실 |  seujung  | 
 |  |  5/24, 12:00 | B2 H회의실 |    | 
 
 
