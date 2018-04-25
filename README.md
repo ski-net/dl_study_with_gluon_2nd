@@ -9,7 +9,7 @@ Deep learning to learn while making
 | Discuss the topic |  3/21,14:00   |   |    |  
 | [relational network](relational_network/relation_reasoning_code_single_gpu.ipynb), <br/>introduction to convolution for NLP |  3/27, 12:00 | 분석실 | seujung, haven-jeon   |  
 | [capsule network](capsule_network/dynamic-routing.md), <br>[intro to rl_trader](rl_trader/180405/180405_Formulation.ipynb) |  4/5, 11:40 | 지하2층 E 회의실  | kionkim, macnt2a   |  
-| [generative_adversarial_network](generatvie_adversarial_network/1_gan_original.ipynb)|  4/12, 12:00 | B2 H회의실  | chococig25   |  
+| [generative_adversarial_network](generative_adversarial_network/1_gan_original.ipynb)|  4/12, 12:00 | B2 H회의실  | chococig25   |  
 |  |  4/19, 12:00 | B2 H회의실  |    |  
 | [End-To-End Memory Networks]() |  4/26, 12:00 | B2 H회의실 | soeque   |  
 |  |  5/3, 12:00 | B2 H회의실 |    |  
