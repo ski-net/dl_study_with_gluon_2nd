@@ -42,3 +42,9 @@ Deep learning to learn while making
 
 - QA
   - relational network(@seujung)
+
+- GAN
+  - cyclegan
+
+- etc
+  - capsnet
