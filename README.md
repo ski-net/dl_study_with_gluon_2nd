@@ -11,7 +11,7 @@ Deep learning to learn while making
 | [capsule network](capsule_network/dynamic-routing.md), <br>[intro to rl_trader](rl_trader/180405/180405_Formulation.ipynb) |  4/5, 11:40 | 지하2층 E 회의실  | kionkim, macnt2a   |  
 | [generative_adversarial_network](generative_adversarial_network/1_gan_original.ipynb)|  4/12, 12:00 | B2 H회의실  | chococig25   |  
 |  |  4/19, 12:00 | B2 H회의실  |    |  
-| [End-To-End Memory Networks]() |  4/26, 12:00 | B2 H회의실 | soeque   |  
+| [End-To-End Memory Networks]() |  4/26, 12:00 | B2 H회의실 | soeque1   |  
 |  |  5/3, 12:00 | B2 H회의실 |    |  
 |  |  5/10, 12:00 | B2 H회의실 |    | 
 | WaveNet |  5/17, 12:00 | B2 H회의실 |  seujung  | 
@@ -42,6 +42,7 @@ Deep learning to learn while making
 
 - QA
   - [relational network](relational_network/relation_reasoning_code_single_gpu.ipynb)(@seujung)
+  - [End-to-End Memory Network](QA/memn2n/n2nmn_base.ipynb)(@soeque1)
 
 - GAN
   - [origin GAN](generative_adversarial_network/1_gan_original.ipynb)(@chococig25)
