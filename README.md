@@ -12,7 +12,7 @@ Deep learning to learn while making
 | [generative_adversarial_network](generative_adversarial_network/1_gan_original.ipynb)|  4/12, 12:00 | B2 H회의실  | chococig25   |  
 |  |  4/19, 12:00 | B2 H회의실  |    |  
 | [End-To-End Memory Networks]() |  4/26, 12:00 | B2 H회의실 | soeque1   |  
-|  |  5/3, 12:00 | B2 H회의실 |    |  
+| [VQA:MUTAN](vqa/mutan.ipynb) |  5/3, 12:00 | B2 H회의실 |  soohwanjo  |  
 |  |  5/10, 12:00 | B2 H회의실 |    | 
 | WaveNet |  5/17, 12:00 | B2 H회의실 |  seujung  | 
 |  |  5/24, 12:00 | B2 H회의실 |    | 
@@ -43,6 +43,8 @@ Deep learning to learn while making
 - QA
   - [relational network](relational_network/relation_reasoning_code_single_gpu.ipynb)(@seujung)
   - [End-to-End Memory Network](QA/memn2n/n2nmn_base.ipynb)(@soeque1)
+- VQA
+  - [MUTAN:Multimodal Tucker Fusion for VQA](vqa/mutan.ipynb)(@soohwanjo)
 
 - GAN
   - [origin GAN](generative_adversarial_network/1_gan_original.ipynb)(@chococig25)
