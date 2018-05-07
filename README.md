@@ -13,7 +13,7 @@ Deep learning to learn while making
 |  |  4/19, 12:00 | B2 H회의실  |    |  
 | [End-To-End Memory Networks]() |  4/26, 12:00 | B2 H회의실 | soeque1   |  
 | [VQA:MUTAN](vqa/mutan.ipynb) |  5/3, 12:00 | B2 H회의실 |  soohwanjo  |  
-|  |  5/10, 12:00 | B2 H회의실 |    | 
+| [Anomaly Detection](anomaly/anomaly_uni.ipynb)  |  5/10, 12:00 | B2 H회의실 |    | 
 | WaveNet |  5/17, 12:00 | B2 H회의실 |  seujung  | 
 |  |  5/24, 12:00 | B2 H회의실 |    | 
 
