@@ -15,7 +15,7 @@ Deep learning to learn while making
 | [VQA:MUTAN](vqa/mutan.ipynb) |  5/3, 12:00 | B2 H회의실 |  soohwanjo  |  
 | [Anomaly Detection](anomaly/anomaly_uni.ipynb)  |  5/10, 12:00 | B2 H회의실 | haven-jeon  | 
 | WaveNet, [LM-LSTM-CRF Model](https://arxiv.org/pdf/1709.04109) paper review  |  5/17, 11:40 | 삼화타워 3층 |  seujung, haven-jeon  | 
-|  |  5/24, 12:00 | B2 H회의실 |    | 
+|WGAN  |  5/24, 12:00 | B2 H회의실 | kionkim   | 
 
 
 ## Subject
@@ -31,7 +31,7 @@ Deep learning to learn while making
  - VQA(Visual Question Answering)
    - soohwanjo
  - GAN(Generative Adversarial Nets)
-   - chococig25, jinyipark582
+   - chococig25, jinyipark582, kionkim
  - TTS(Text To Speech)
    - seujung
  - QA(Question & Answer)
@@ -50,6 +50,7 @@ Deep learning to learn while making
   - [origin GAN](generative_adversarial_network/1_gan_original.ipynb)(@chococig25)
   - cycleGAN
   - starGAN
+  - [WGAN](generative_adversarial_network/wgan.md)(@kionkim)
 
 - etc
   - [capsule network](capsule_network/dynamic-routing.md)(@kionkim)
