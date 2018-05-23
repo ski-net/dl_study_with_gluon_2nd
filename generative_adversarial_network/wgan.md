@@ -48,7 +48,7 @@ $$D = \left(\begin{array}{ccc} \|x_1 - y_1\| &\cdots &\| x_1 - y_l\| \\ \vdots &
 위의 두 행렬의 Fabuluous norm으로 기대값을 구할 수 있습니다.
 $$ \left<D, \gamma \right>_F =  E_{(x, y) \sim \gamma(x, y)} \|X-y\| $$
 
-![Wasserstein_transportation_example_1](/assets/Wasserstein_transportation_example_1.png)
+![Wasserstein_transportation_example_1](./assets/Wasserstein_transportation_example_1.png)
 
 $vec$ operator는 행렬을 벡터로 표현하는 operator입니다. 위의 행렬은 길이가 $l^2$인 벡터들로 바뀝니다.
 
@@ -127,7 +127,7 @@ A = np.concatenate((A_r.reshape((l, l**2)), A_t.reshape((l, l**2))), axis = 0)
 b = np.concatenate((p_r, p_t), axis = 0)
 c = D.reshape((l**2))
 ```
-![Wasserstein_transportation_example_2](/assets/Wasserstein_transportation_example_2.png)
+![Wasserstein_transportation_example_2](./assets/Wasserstein_transportation_example_2.png)
 
 
 지금까지 설명해 놓은 Kantorovich-Rubinstein duality에 의한 Wasserstein distance는 다음과 같이 정의됩니다.
@@ -155,11 +155,11 @@ WGAN의 motivation은 다음과 같습니다. Generator 신경망은 생성된 �
 
 논문에서 나온 예가 2차원 평면에 정의된 두개의 분포에 관한 얘기입니다. 두개 분포의 거리를 재는데, 기존의 KL distance, JS distance는 무한대 값(KL divergence)이라던가, 실제 거리와는 상관없는 어떤 값(JS divergence)을 나타낸다는 것입니다.
 
-![wgan_dist_example](/assets/wgan_dist_example.png)
+![wgan_dist_example](./assets/wgan_dist_example.png)
 
 하지만, Wasserstein 거리는 아래처럼 나타나고, 실제 분포간의 거리를 잘 반영합니다.
 
-![wgan_measure](/assets/wgan_measure.png)
+![wgan_measure](./assets/wgan_measure.png)
 
 또한 비교하는 두 분포의 absolute continuity는 요구하지 않고, 대상이 되는 분포의 absolutely continuity만 요구합니다. 기존의 조건보다 많이 완화된 조건입니다. 거기다, KL/JS divergence가 0으로 수렴하지 않더라도, Wasserstein 거리는 0으로 수렴할 수 있고, W 거리가 수렴하면, KL/JS divergence는 수렴을 해야만 합니다. 그러니, W를 0으로 만드는 작업이 KL/JS divergence를 0으로 만드는 작업보다 훨씬 쉬울 것 같습니다.
 
@@ -190,4 +190,4 @@ $$ \frac{\partial}{\partial \theta}\sup_{w \in \mathcal W} E_{P_r}(f_w(X)) - E_{
 
 다음은 논문에서 제시된 알고리즘입니다.
 
-![wgan_algorithm](/assets/wgan_algorithm.png)
+![wgan_algorithm](./assets/wgan_algorithm.png)
