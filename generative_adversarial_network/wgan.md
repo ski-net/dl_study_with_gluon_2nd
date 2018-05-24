@@ -11,7 +11,7 @@ $$W_p(P_r, P_\theta) = \inf_{\gamma \in \Gamma}E_{(x,y) \sim \gamma(x, y)}\left(
 
 Wasserstein distance는 두개의 주변 확률 분포를 일치시키기 위해 하나의 분포를 다른 분포로 변화시키기 위해 mass를 옮기는 과정(transportation plan)을 상상합니다. 머신러닝 분야에서는 이 거리를 Earth Moving distance라고 하는데 mass를 움직임을 은유적으로 표현한 것이 아닌가 싶습니다. 결론부터 말하자면, Transportation plan은 결합확률분포의 다른 표현입니다. 그 이유는 다음과 같습니다.
 
-![wasserstein_transportation_eample](/assets/wasserstein_transportation_eample.png)
+![wasserstein_transportation_eample](./assets/wasserstein_transportation_eample.png)
 
 
 먼저 각각의 분포가 $l$개의 bin으로 구분되어 있다고 생각합니다. $x$를 $P_r$의 support에 있는 bin으로, $y$를 $P_\theta$의 support에 있는 $l$개 bin 중에 하나라고 합니다. $\gamma(x, y)$는 $P_\theta$의 bin $x$로부터 $P_r$의 bin $y$로 움직이는 mass의 크기를 나타냅니다. 예를 들면, $\gamma(1, 3)= .2$는 $P_\theta(1)$의 mass 중 .2를 $P_r(3)$으로 옮기라는 의미입니다. Transportation plan은 다음의 조건을 만족해야 합니다.
@@ -48,7 +48,7 @@ $$D = \left(\begin{array}{ccc} \|x_1 - y_1\| &\cdots &\| x_1 - y_l\| \\ \vdots &
 위의 두 행렬의 Fabuluous norm으로 기대값을 구할 수 있습니다.
 $$ \left<D, \gamma \right>_F =  E_{(x, y) \sim \gamma(x, y)} \|X-y\| $$
 
-![Wasserstein_transportation_example_1](/assets/Wasserstein_transportation_example_1.png)
+![Wasserstein_transportation_example_1](./assets/Wasserstein_transportation_example_1.png)
 
 $vec$ operator는 행렬을 벡터로 표현하는 operator입니다. 위의 행렬은 길이가 $l^2$인 벡터들로 바뀝니다.
 
@@ -63,14 +63,18 @@ $$c = d^Tg$$
 * $\sum_{i=1}^l \gamma(x_i, y) = P_r(y)$
 * $\sum_{j=1}^l \gamma(x, y_j) = P_\theta(x)$
 
-위의 조건을 표현하기 위해 적절히 design 행렬 $A$를 정의하면,
 
+위의 조건을 표현하기 위해 적절히 design 행렬 $A$를 정의하면,
+<!--
 $$A = \left(\begin{array}{c|c|c} [
   \bm 1_{l\times 1}, \bm 0_{l\times (l-1)}] & \ldots & [\bm 0_{l\times (l-1)}, \bm 1_{l\times 1}]\\
 \|x_l - y_1\| &\cdots &\|x_l - y_l\|\end{array}\right)$$
 
 
 $$ x = \left(\begin{array}{c}\gamma(x_1, y_1) \\ \gamma(x_2, y_1) \\ \vdots \\ \gamma(x_l, y_1) \\ \vdots \\ \gamma(x_l, y_l)\end{array}\right), b = \left(\begin{array}{c} P_\theta(x_1) \\ P_\theta(x_2) \\ \vdots \\ P_r(y_1) \\ \vdots \\ P_r(y_l)\end{array}\right)$$
+-->
+
+![WGAN_KW_Design](./assets/WGAN_KW_Design.png)
 
 위의 조건 중 두번째 세번째 조건은 다음과 같이 쓸 수 있습니다.
 $$A\cdot x =  b$$
@@ -104,7 +108,7 @@ $D_{i,i}$는 모든 $i$에 대해서 0입니다. 자기 자신과의 거리는 0
 
 $P_\theta$와 $P_r$이 모두 양의 값을 가지므로 (확률의 axiom) EMD를 극대화하기 위해서는 $\bm f^T P_\theta + \bm g^T P_r$이 극대화되는 점이 곧 EMD가 극대화되는 점이고, $f(x_i) \le -g(x_i)$이므로, $f(x_i) = - g(x_i)$인 점에서 극대화 되고, 결국 $\bm f^T P_\theta + \bm g^T P_r$은 0인 경우 EMD가 가장 극대화됩니다. (여기서 EMD를 극대화시킨다는 것은 dual 공간에서 작업하기 때문입니다.)
 
-
+![Wasserstein_Dual_Design](./assets/Wasserstein_Dual_Design.png)
 
 다음은 python으로 moving cost를 최소화한 transportation plan을 찾는 방법을 simulation 해놓은 예제입니다.
 ```
@@ -127,7 +131,7 @@ A = np.concatenate((A_r.reshape((l, l**2)), A_t.reshape((l, l**2))), axis = 0)
 b = np.concatenate((p_r, p_t), axis = 0)
 c = D.reshape((l**2))
 ```
-![Wasserstein_transportation_example_2](/assets/Wasserstein_transportation_example_2.png)
+![Wasserstein_transportation_example_2](./assets/Wasserstein_transportation_example_2.png)
 
 
 지금까지 설명해 놓은 Kantorovich-Rubinstein duality에 의한 Wasserstein distance는 다음과 같이 정의됩니다.
@@ -151,17 +155,28 @@ $$\sup_{\|f\| \le K} E_{P_r}(f(X)) - E_{P_\theta}(f(x)) =  K\cdot W(P_r, P_\thet
 #### WGAN의 학습 알고리즘
 
 
-WGAN의 motivation은 다음과 같습니다. Generator 신경망은 생성된 데이터의 분포와 진짜 데이터의 분포를 비슷하게 만들기 위해서 노력합니다. 그 때 줄이고자 하는 분포간의 거리가 Wasserstein 거리가 됩니다. 이렇게 새로운 거리 개념을 도입하는 이유는 JS divergence가 absolute continuity 가정 위에서 성립하는데, 데이터 생성을 위한 분포와 실제 데이터 분포가 support를 공유하지 않으면, JS divergence가 실제 분포간의 거리를 반영하지 못하기 때문입니다. 그 분포간의 거리를 보다 잘 반영하기 위해서  absolute continuity를 요구하지 않는 새로운 거리 개념이 필요하게 된 것입니다. 그래서 Wasserstein 거리를 도입하게 된 것입니다.
+WGAN의 motivation은 다음과 같습니다. Generator 신경망은 생성된 데이터의 분포와 진짜 데이터의 분포를 비슷하게 만들기 위해서 노력합니다. 다음은 GAN의 loss 함수입니다.
 
-논문에서 나온 예가 2차원 평면에 정의된 두개의 분포에 관한 얘기입니다. 두개 분포의 거리를 재는데, 기존의 KL distance, JS distance는 무한대 값(KL divergence)이라던가, 실제 거리와는 상관없는 어떤 값(JS divergence)을 나타낸다는 것입니다.
+$$ L(G, D) = E_{X\sim P_r}[\log D(x)] + E_{Z\sim P_z}[\log(1 - D(G(Z)))]$$
+만약 $Z$ 값을 넣었을 때 생성되는 이미지의 분포 그 자체를 $P_G$라고 하면 다음과 같이 쓸 수 있습니다.
 
-![wgan_dist_example](/assets/wgan_dist_example.png)
+$$ L(G, D) = E_{X\sim P_r}[\log D(x)] + E_{Z\sim P_g}[\log(1 - D(X))]$$
 
-하지만, Wasserstein 거리는 아래처럼 나타나고, 실제 분포간의 거리를 잘 반영합니다.
+만약 Generator가 잘 생성한다면, optimal discriminator는 언제나 0.5의 확률로 생성된 데이터와 실제 데이터를 판별할 것이고, 이를 수식으로 나타내면,
 
-![wgan_measure](/assets/wgan_measure.png)
+$$L(G,D^* ) = 2D_{JS}(p_r||p_g) - 2\log 2$$
+로 표현할 수 있습니다. Optimal인 경우를 가정해서 나온 결과이기는 하지만, 개념적으로는 GAN이 생성된 데이터와 원래 데이터 간의 JS 거리를 가장 작게 하는 방향으로 학습이 되고 있다고 할 수 있겠습니다.
 
-또한 비교하는 두 분포의 absolute continuity는 요구하지 않고, 대상이 되는 분포의 absolutely continuity만 요구합니다. 기존의 조건보다 많이 완화된 조건입니다. 거기다, KL/JS divergence가 0으로 수렴하지 않더라도, Wasserstein 거리는 0으로 수렴할 수 있고, W 거리가 수렴하면, KL/JS divergence는 수렴을 해야만 합니다. 그러니, W를 0으로 만드는 작업이 KL/JS divergence를 0으로 만드는 작업보다 훨씬 쉬울 것 같습니다.
+하지만, JS 거리가 언제나 잘 정의가 되는 것은 아닙니다. Support를 공유(absolute continuity 가정)해야만 가능한 것으로, manifold hypothesis에 의하면, support를 공유하지 않을 활률이 아주 높다는 것입니다. 그렇다면 좀더 안정적으로 정의되는 분포간의 거리를 재는 measure가 필요한데요, 그 때 줄이고자 하는 분포간의 거리가 Wasserstein 거리가 됩니다. Wasserstein distance는 비교하는 두 분포 간의 absolute continuity를 요구하지 않는 거리입니다. 대신, 대상이 되는 분포의 absolutely continuity만 요구합니다. 기존의 조건보다 많이 완화된 조건입니다. 거기다, KL/JS divergence가 0으로 수렴하지 않더라도, Wasserstein 거리는 0으로 수렴할 수 있고, W 거리가 수렴하면, KL/JS divergence는 수렴을 해야만 합니다. 그러니, W를 0으로 만드는 작업이 KL/JS divergence를 0으로 만드는 작업보다 훨씬 쉬울 것 같습니다. 훨씬 안정적으로 정의될 수 있다는 것을 의미합니다.
+
+이런 이야기를 논문에서는 2차원 평면에 정의된 두개의 uniform 분포를 예로 듭니다. 두개 분포의 거리를 재는데, 기존의 KL distance, JS distance는 무한대 값(KL divergence)이라던가, 실제 거리와는 상관없는 어떤 값(JS divergence)을 나타낸다는 것입니다.
+
+![wgan_dist_example](./assets/wgan_dist_example.png)
+
+반면 Wasserstein 거리는 아래처럼 나타나고, 이는 실제 분포간의 거리를 잘 반영합니다.
+
+![wgan_measure](./assets/wgan_measure.png)
+
 
 하지만, 이 metric은, 원래의 정의에 따르면 거리를 구하는 것만 optimization 문제가 되어버릴 정도로 아주 복잡한 문제입니다. 그 문제를 해결하기 위해서 Kantorovich-Rubinstein 쌍대성을 활용해서 결합확률분포 전체를 탐색하여 거리를 구하기 보다는 Lipschitz 함수족에 대한 각 분포의 기대값의 $\sup$ 값을 거리로 계산합니다.
 
@@ -190,4 +205,10 @@ $$ \frac{\partial}{\partial \theta}\sup_{w \in \mathcal W} E_{P_r}(f_w(X)) - E_{
 
 다음은 논문에서 제시된 알고리즘입니다.
 
-![wgan_algorithm](/assets/wgan_algorithm.png)
+![wgan_algorithm](./assets/wgan_algorithm.png)
+
+### 참고문헌
+
+* https://www.cph-ai-lab.com/wasserstein-gan-wgan
+* https://vincentherrmann.github.io/blog/wasserstein/
+* https://www.alexirpan.com/2017/02/22/wasserstein-gan.html
