@@ -167,6 +167,8 @@ $$ L(G, D) = E_{X\sim P_r}[\log D(x)] + E_{Z\sim P_g}[\log(1 - D(X))]$$
 $$L(G,D^* ) = 2D_{JS}(p_r||p_g) - 2\log 2$$
 로 표현할 수 있습니다. Optimal인 경우를 가정해서 나온 결과이기는 하지만, 개념적으로는 GAN이 생성된 데이터와 원래 데이터 간의 JS 거리를 가장 작게 하는 방향으로 학습이 되고 있다고 할 수 있겠습니다.
 
+![wgan_dist_example](./assets/wgan_dist_example.png)
+
 하지만, JS 거리가 언제나 잘 정의가 되는 것은 아닙니다. Support를 공유(absolute continuity 가정)해야만 가능한 것으로, manifold hypothesis에 의하면, support를 공유하지 않을 활률이 아주 높다는 것입니다. 그렇다면 좀더 안정적으로 정의되는 분포간의 거리를 재는 measure가 필요한데요, 그 때 줄이고자 하는 분포간의 거리가 Wasserstein 거리가 됩니다. Wasserstein distance는 비교하는 두 분포 간의 absolute continuity를 요구하지 않는 거리입니다. 대신, 대상이 되는 분포의 absolutely continuity만 요구합니다. 기존의 조건보다 많이 완화된 조건입니다. 거기다, KL/JS divergence가 0으로 수렴하지 않더라도, Wasserstein 거리는 0으로 수렴할 수 있고, W 거리가 수렴하면, KL/JS divergence는 수렴을 해야만 합니다. 그러니, W를 0으로 만드는 작업이 KL/JS divergence를 0으로 만드는 작업보다 훨씬 쉬울 것 같습니다. 훨씬 안정적으로 정의될 수 있다는 것을 의미합니다.
 
 이런 이야기를 논문에서는 2차원 평면에 정의된 두개의 uniform 분포를 예로 듭니다. 두개 분포의 거리를 재는데, 기존의 KL distance, JS distance는 무한대 값(KL divergence)이라던가, 실제 거리와는 상관없는 어떤 값(JS divergence)을 나타낸다는 것입니다.
