@@ -16,6 +16,7 @@ Deep learning to learn while making
 | [Anomaly Detection](anomaly/anomaly_uni.ipynb)  |  5/10, 12:00 | B2 H회의실 | haven-jeon  | 
 | [LM-LSTM-CRF Model](https://arxiv.org/pdf/1709.04109) paper review  |  5/17, 11:40 | 삼화타워 3층 | haven-jeon  | 
 |WGAN  |  5/24, 12:00 | B2 H회의실 | kionkim   | 
+|WaveNet  |  5/31, 12:00 | B2 H회의실 | seujung   | 
 
 
 ## Subject
