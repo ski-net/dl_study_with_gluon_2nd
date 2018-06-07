@@ -17,6 +17,7 @@ Deep learning to learn while making
 | [LM-LSTM-CRF Model](https://arxiv.org/pdf/1709.04109) paper review  |  5/17, 11:40 | 삼화타워 3층 | haven-jeon  | 
 |WGAN  |  5/24, 12:00 | B2 H회의실 | kionkim   | 
 |WaveNet  |  5/31, 12:00 | B2 H회의실 | seujung   | 
+|[QA with external embedding](QA/lstm/n2nmn_lstm_gluon_with_custom_embedding.ipynb) |  6/7, 12:00 | B2 H회의실 | soeque1   | 
 
 
 ## Subject
