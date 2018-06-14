@@ -18,7 +18,7 @@ Deep learning to learn while making
 |WGAN  |  5/24, 12:00 | B2 H회의실 | kionkim   | 
 |WaveNet  |  5/31, 12:00 | B2 H회의실 | seujung   | 
 |[QA with external embedding](QA/lstm/n2nmn_lstm_gluon_with_custom_embedding.ipynb) |  6/7, 12:00 | B2 H회의실 | soeque1   | 
-|[dcgan](generative_adversarial_network/2_dcgan.ipynb), [cyclegan](generative_adversarial_network/3_cyclegan.ipynb) |  6/14, 12:00 | 31층 | chococig25   | 
+|[dcgan](generative_adversarial_network/2_dcgan.ipynb), [cyclegan](generative_adversarial_network/3_cycle_gan.ipynb) |  6/14, 12:00 | 31층 | chococig25   | 
 
 
 ## Subject
@@ -52,7 +52,7 @@ Deep learning to learn while making
 - GAN
   - [origin GAN](generative_adversarial_network/1_gan_original.ipynb)(@chococig25)
   - [dcGAN](generative_adversarial_network/2_dcgan.ipynb)(@chococig25)
-  - [cycleGAN](generative_adversarial_network/3_cyclegan.ipynb)(@chococig25)
+  - [cycleGAN](generative_adversarial_network/3_cycle_gan.ipynb)(@chococig25)
   - starGAN (@jinyipark582)
   - [WGAN](generative_adversarial_network/wgan.md)(@kionkim)
 
